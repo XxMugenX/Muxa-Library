@@ -1,14 +1,17 @@
 function Upload() {
+    function handleUpload() {
+        
+    }
     return (
-        <>
-            <br></br>
+        <>          
             <div className="">
-            <input
+            <label  htmlFor="input">Choose file to upload</label><br></br>
+            <input id ="input" style={{opacity: 1}}
                 type="file"
                 accept=".pdf, .doc, .txt">
                 </input>
-                
-                <button type="submit">submit</button>
+                {/* handle unsupported files */}
+                <button onClick={handleUpload}>Upload File</button>
             </div>
         </>
     )

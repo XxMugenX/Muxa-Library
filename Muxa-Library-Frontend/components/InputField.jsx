@@ -7,9 +7,11 @@ function InputField({title,placeholder}) {
 
     return (
         <>
-        <div style={style}>
-                <p className="">{title}</p>
-                <input className="" placeholder={placeholder}></input>    
+            <div style={style}>
+                <label>{title}</label>
+                <div>
+                    <input  className="" placeholder={placeholder}></input>  
+                </div>
         </div>
         </>
     )
