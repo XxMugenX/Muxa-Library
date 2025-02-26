@@ -25,10 +25,10 @@ router.route('/').get(async (req, res) => {
              
         },
         {
-            Title:"pumpkin night",
-            Author:"japan",
+            Title: "record of ragnarok",
+            Author: "japan",
              
-        },]
+        }]
 )
 })
 module.exports = router;
