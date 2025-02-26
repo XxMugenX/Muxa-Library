@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
-//const upload = require('multer')
-//const router = require(router)
+const multer = require('multer')
+const upload = multer({dest : 'uploads/'})
 
 
-router.route('/').post( async (req, res) => {
-    const formData = req.body
-    console.log(formData)
+router.route('/').post( upload.single('file'),async (req, res, next) => {
+    console.log(req.file);
+    console.log(req.body);
     return res.json({
-        status: "successful",
+        status: "Successful",
+        message: "File has been uploaded succesfully"
     });
 })
 

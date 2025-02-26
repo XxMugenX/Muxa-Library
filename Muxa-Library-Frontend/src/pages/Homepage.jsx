@@ -9,8 +9,7 @@ const styling1 = {
     alignItems: "center",
     justifyContent : "center"
 }
-const styling = {
-   
+const styling = {  
     display: "grid",
     backgroundColor : "white",
     gridTemplateColumns: "1fr 1fr 1fr 1fr",
@@ -30,7 +29,7 @@ function Homepage() {
         // for (const i in data) {
         //     console.log(data[i])
         // }
-        console.log('data: ' + data)
+       // console.log('data: ' + data)
        // console.log("result " + await result)
         setBook( data)
     }
