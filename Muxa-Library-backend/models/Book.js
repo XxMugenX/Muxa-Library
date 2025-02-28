@@ -4,23 +4,23 @@ const schema = mongoose.Schema;
 
 const BookSchema = new schema({
     Title: {
-        type: string,
+        type: String,
         required: true
     },
     Description: {
-        type: string,
+        type: String,
         required: true
     },
     Author: {
-        type: string,
+        type: String,
         required: true
     },
     Book: {
-        type: File,
-        required: true
+        type: Buffer,
+        
     }
 },
     { collection: " Books " });
-const Book = mongoose.model("Book", BookSchema);
+const Book= mongoose.model("Book", BookSchema);
  
-module.export = Book;
+module.exports = Book
